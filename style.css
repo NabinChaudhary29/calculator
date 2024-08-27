@@ -3,6 +3,7 @@ body{
     /* color: white; */
     font-family: sans-serif;
     display: flex;
+   flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,21 +15,52 @@ body{
     padding: 45px 20px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .display{
-    background-color:rgb(93, 150, 190);
+   
     color: black;
     padding: 10px;
     font-size: 24px;
     text-align: right;
     border-radius: 5px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+#inputField {
+   background-color: black;
+   color: white;
+    width: 250px;
+    height: 40px;
+    border: 0px;
+}
+#calculateField{
+
+    background-color: black;
+    color: white;
+     width: 250px;
+     height: 40px;
+     border: 0px;
+ 
 }
 .buttons{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
 }
+.zero{
+    grid-column: 1 / span 2;
+}
+
 button {
     background-color: #333;
     color: #fff;

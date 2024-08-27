@@ -9,30 +9,32 @@
 <body>
     <div class="calculator">
         <div class="display">
-            0
+            <input id="inputField" readonly>
+            <input  id="calculateField" readonly>
         </div>
         <div class="buttons">
-            <button class="operatorgrey">AC</button>
-            <button class="operatorgrey">±</button>
-            <button class="operatorgrey">%</button>
-            <button class="operator">÷</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button>0</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="operator">=</button>
+            <button class="operatorgrey" onclick="clearGar()">AC</button>
+            <button class="operatorgrey" onclick="">±</button>
+            <button class="operatorgrey" onclick="displayGar('%')">%</button>
+            <button class="operator" onclick="displayGar('/')">÷</button>
+            <button onclick="displayGar('7')">7</button>
+            <button onclick="displayGar('8')">8</button>
+            <button onclick="displayGar('9')">9</button>
+            <button class="operator" onclick="displayGar('*')">x</button>
+            <button onclick="displayGar('4')">4</button>
+            <button onclick="displayGar('5')">5</button>
+            <button onclick="displayGar('6')">6</button>
+            <button class="operator" onclick="displayGar('-')">-</button>
+            <button onclick="displayGar('1')">1</button>
+            <button onclick="displayGar('2')">2</button>
+            <button onclick="displayGar('3')">3</button>
+            <button class="operator" onclick="displayGar('+')">+</button>
+            <button class="zero" onclick="displayGar('0')">0</button>
+            
+            <button onclick="displayGar('.')">.</button>
+            <button class="operator" onclick="calculateGar('=')">=</button>
         </div>
     </div>
+<script src="cal.js"></script>
 </body>
 </html>
