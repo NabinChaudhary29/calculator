@@ -1,6 +1,6 @@
 body{
-    /* background-color: black; */
-    /* color: white; */
+    /* background-color: black;
+    color: white; */
     font-family: sans-serif;
     display: flex;
    flex-direction: column;
@@ -39,14 +39,15 @@ body{
 #inputField {
    background-color: black;
    color: white;
+   text-align: right;
     width: 250px;
     height: 40px;
     border: 0px;
 }
 #calculateField{
-
     background-color: black;
     color: white;
+    text-align: right;
      width: 250px;
      height: 40px;
      border: 0px;
